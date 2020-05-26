@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl1"
+    android:layout_width="wrap_content"
+    android:padding="@dimen/margin"
+    android:layout_marginTop="@dimen/margin_lg"
+    android:background="@drawable/round_ract0"
+    android:backgroundTint="@color/white1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/imv_rl"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_ract0"
+        android:backgroundTint="@color/lgry"
+        android:layout_height="@dimen/size10">
+        <ImageView
+            android:layout_width="@dimen/size62"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo"
+            android:tint="@color/gry"
+            android:layout_height="@dimen/size62"/>
+        <com.inone.app.other.CustomImageView
+            android:id="@+id/imv"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tmp4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin1"
+        android:layout_below="@id/imv_rl"
+        android:singleLine="true"
+        android:fontFamily="@font/font2"
+        android:includeFontPadding="false"
+        android:text="Offer Title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_lg" />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin1"
+        android:layout_below="@id/txt1"
+        android:singleLine="true"
+        android:fontFamily="@font/font1"
+        android:includeFontPadding="false"
+        android:text="#DDJDJD"
+        android:textColor="@color/dgry"
+        android:textSize="@dimen/txt_size_md1" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin1"
+        android:layout_below="@id/txt2"
+        android:singleLine="true"
+        android:fontFamily="@font/font1"
+        android:includeFontPadding="false"
+        android:text="lorem ipsome is the dummy content"
+        android:textColor="@color/dgry"
+        android:textSize="@dimen/txt_size_md1" />
+
+</RelativeLayout>

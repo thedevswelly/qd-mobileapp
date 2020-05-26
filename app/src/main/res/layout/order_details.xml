@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:paddingBottom="@dimen/size61"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/slider_rl"
+                android:layout_width="match_parent"
+                android:background="@color/lgry"
+                android:layout_height="@dimen/size12">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/slider"
+                    android:background="@color/white1"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:id="@+id/dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/margin1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin1"
+                    android:layout_marginBottom="@dimen/margin1"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_below="@id/slider_rl"
+                android:id="@+id/lv1"
+                android:layout_marginTop="@dimen/margin_md"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/my_tool2"/>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size6"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:visibility="gone"
+            android:background="@drawable/bt_bg"
+            android:backgroundTint="@color/app_color"
+            android:fontFamily="@font/font2"
+            android:includeFontPadding="false"
+            android:text="@string/update_st"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_lg" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size6"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:visibility="gone"
+            android:background="@drawable/bt_bg"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/font2"
+            android:includeFontPadding="false"
+            android:text="@string/assign_driver"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_lg" />
+    </LinearLayout>
+</RelativeLayout>

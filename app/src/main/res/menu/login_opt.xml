@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/pin1"
+        android:title="Driver"/>
+    <item
+        android:id="@+id/pin2"
+        android:title="Vendor"/>
+    <item
+        android:id="@+id/pin3"
+        android:title="User"/>
+
+
+</menu>

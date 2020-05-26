@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/my_tool1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin"
+        android:layout_marginTop="@dimen/size7"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/lgry"
+            app:cardCornerRadius="@dimen/margin1"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin">
+
+                <ImageView
+                    android:id="@+id/imv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size100"
+                    android:scaleType="centerCrop"
+                     />
+
+                <ImageView
+                    android:layout_width="@dimen/size6"
+                    android:layout_height="@dimen/size6"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                  />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/card1"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin1"
+            >
+            <RelativeLayout
+                android:id="@+id/rgt_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                >
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/font2"
+                    android:includeFontPadding="false"
+                    android:text="345"
+                    android:textColor="@color/dgry"
+                    android:textSize="@dimen/txt_size_md1" />
+
+                <ImageView
+                    android:layout_width="@dimen/size3"
+                    android:layout_height="@dimen/size3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin1"
+                    android:layout_toRightOf="@id/txt3"
+                    android:src="@drawable/eye_icon"
+                    android:tint="@color/dgry" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@id/rgt_rl"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font2"
+
+                android:includeFontPadding="false"
+                android:text="Title here"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_lg" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:layout_marginTop="@dimen/margin1"
+                android:layout_marginRight="@dimen/margin_xlg"
+                android:fontFamily="@font/font1"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/sizesm1"
+                android:text="Lorem ipsome is the summy cintent ipsome is the summy cintent ipsome is the summy cintent "
+                android:textColor="@color/dgry"
+                android:textSize="@dimen/txt_size_md1" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

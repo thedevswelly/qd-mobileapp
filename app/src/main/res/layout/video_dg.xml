@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <VideoView
+        android:id="@+id/vv1"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imv"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/close_ic"
+        android:layout_width="@dimen/size4"
+        android:src="@drawable/left_icon"
+        android:tint="@color/white"
+
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/app_color"
+        android:padding="@dimen/sizesm1"
+        android:layout_margin="@dimen/margin"
+        android:layout_alignParentRight="true"
+        android:layout_height="@dimen/size4"/>
+    <ProgressBar
+        android:id="@+id/pb1"
+        android:layout_width="wrap_content"
+        android:indeterminateTint="@color/app_color"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

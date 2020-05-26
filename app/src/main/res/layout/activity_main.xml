@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MainActivity">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="@dimen/margin1"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginRight="@dimen/margin1"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="@dimen/size3"
+            android:onClick="SrchNow"
+            android:padding="@dimen/sizesm1"
+            android:src="@drawable/search_icon"
+            android:tint="@color/dgry1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="@dimen/size3"/>
+        <RelativeLayout
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/search_icon"
+            android:layout_marginRight="@dimen/margin1"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/nav_icon"
+                android:layout_width="wrap_content"
+                android:src="@drawable/nav_icon"
+                android:onClick="NavNow"
+                android:backgroundTint="@color/app_color"
+                app:backgroundTint="@color/app_color"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:layout_centerVertical="true"
+                android:tint="@color/white1"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin1"
+                android:layout_toRightOf="@id/nav_icon"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+
+                android:src="@drawable/logo"
+                android:layout_height="@dimen/size2" />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/sizesm1"
+                android:layout_below="@id/txt1"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/font2"
+                android:layout_marginTop="@dimen/margin1"
+
+                android:textColor="@color/dgry"
+                android:textSize="@dimen/txt_size_md"
+                android:text="@string/punch_line"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size62"
+
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            app:tabMode="fixed"
+            app:tabIndicator="@color/app_color"
+            app:tabGravity="fill"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp1"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="@dimen/size62"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

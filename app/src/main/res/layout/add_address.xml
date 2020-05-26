@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin1"
+    android:paddingTop="@dimen/margin"
+    android:paddingRight="@dimen/margin1"
+    android:paddingBottom="@dimen/margin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="@dimen/margin_xlg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:background="@drawable/round_ract0"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sizesm1"
+                    android:background="@null"
+                    android:fontFamily="@font/font1"
+                    android:hint="@string/address_line1"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:background="@drawable/round_ract0"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sizesm1"
+                    android:background="@null"
+                    android:fontFamily="@font/font1"
+                    android:hint="@string/address_line2"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:background="@drawable/round_ract0"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/et3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sizesm1"
+                    android:background="@null"
+                    android:fontFamily="@font/font1"
+                    android:hint="@string/city"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:background="@drawable/round_ract0"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/et4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sizesm1"
+                    android:background="@null"
+                    android:fontFamily="@font/font1"
+                    android:hint="@string/state"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:background="@drawable/round_ract0"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/et5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sizesm1"
+                    android:background="@null"
+                    android:fontFamily="@font/font1"
+                    android:hint="@string/country"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:background="@drawable/round_ract0"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin">
+
+                <TextView
+                    android:id="@+id/et6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sizesm1"
+                    android:background="@null"
+                    android:fontFamily="@font/font1"
+                    android:hint="@string/pincode"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:background="@drawable/round_ract0"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin">
+
+                <EditText
+                    android:id="@+id/et7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sizesm1"
+                    android:background="@null"
+                    android:fontFamily="@font/font1"
+                    android:hint="@string/contact_number"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size62"
+
+                android:layout_marginTop="@dimen/margin_lg"
+                android:background="@drawable/bt_bg"
+                android:backgroundTint="@color/app_color"
+                android:fontFamily="@font/font2"
+                android:includeFontPadding="false"
+                android:onClick="NextNow"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_lg" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="@dimen/margin1"
+        android:layout_marginRight="@dimen/margin_xlg"
+        android:fontFamily="@font/font1"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="@dimen/sizesm1"
+        android:text="@string/plz_ent_dt"
+        android:textColor="@color/dgry"
+        android:textSize="@dimen/txt_size_lg" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fab1"
+        android:layout_marginTop="@dimen/margin_lg"
+        android:fontFamily="@font/font2"
+        android:includeFontPadding="false"
+        android:text="@string/add_new_address"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_xlg" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="BackNow"
+        android:scaleX=".8"
+        android:scaleY=".8"
+        android:src="@drawable/left_icon"
+        android:tint="@color/white" />
+</RelativeLayout>

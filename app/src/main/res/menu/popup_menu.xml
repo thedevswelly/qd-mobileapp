@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/parcel_received"
+        android:title="Parcel Received"/>
+    <item
+        android:id="@+id/pending"
+        android:title="Pending"/>
+    <item
+        android:id="@+id/delivered"
+        android:title="Delivered"/>
+    <item
+        android:id="@+id/canceled"
+        android:title="Canceled"/>
+
+</menu>
